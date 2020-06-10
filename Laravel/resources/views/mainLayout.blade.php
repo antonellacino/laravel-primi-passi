@@ -8,8 +8,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link href="css/app.css" rel="stylesheet">
-        <script src="js/app.js"></script>
+        <link href="/css/app.css" rel="stylesheet">
+        <script src="/js/app.js"></script>
        
     </head>
     <body>

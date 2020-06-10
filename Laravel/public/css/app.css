@@ -38,3 +38,25 @@
   margin-left: 20px;
 }
 
+.content h2 {
+  margin-top: 20px;
+}
+
+.content a {
+  text-decoration: none;
+  color: firebrick;
+}
+
+.content ul {
+  list-style: none;
+}
+
+.content ul li {
+  margin: 3px;
+}
+
+.content img {
+  width: 200px;
+  height: 150px;
+}
+

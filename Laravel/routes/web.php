@@ -2,7 +2,10 @@
 
 Route::get('/', function () {
     $cards=config('pasta');
-    $collection=collect($cards);
+    $collection= collect($cards) -> map(function ($iteam, $key){
+        $iteam['id']=$key;
+        return $iteam;
+    });
 
     $lunga=$collection->where('tipo','lunga');
     $corta=$collection->where('tipo','corta');
@@ -42,3 +45,8 @@ $contacts=[
     return view('contact',compact('contacts'));
 });
 
+Route::get('/showPasta/{id}', function ($id) {
+    $cards=config('pasta');
+    $card=$cards[$id];
+    return view('showPasta',compact('card'));
+})->name('showPasta');
